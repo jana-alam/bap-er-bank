@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bap Er Bank</title>
+    <!-- tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl mt-12 text-center">
+        Transaction of <span class="text-purple-500">Money</span>!!
+      </h1>
+    </header>
+    <main>
+      <section class="w-3/4 m-auto mt-8 text-center mt-8 py-8 flex">
+        <!-- Balance Section -->
+        <div
+          class="
+            flex-1
+            mx-2
+            bg-green-400
+            py-8
+            text-white
+            border border-black
+            rounded
+          "
+        >
+          <h3 class="text-2xl">Deposit</h3>
+          <h4 class="text-4xl">$<span id="total-deposited">00</span></h4>
+        </div>
+        <div
+          class="
+            flex-1
+            mx-2
+            bg-red-400
+            py-8
+            text-white
+            border border-black
+            rounded
+          "
+        >
+          <h3 class="text-2xl">Withdraw</h3>
+          <h4 class="text-4xl">$<span id="total-withdrawn">00</span></h4>
+        </div>
+        <div
+          class="
+            flex-1
+            mx-2
+            bg-blue-400
+            py-8
+            text-white
+            border border-black
+            rounded
+          "
+        >
+          <h3 class="text-2xl">Balance</h3>
+          <h4 class="text-4xl">$<span id="total-balance">00</span></h4>
+        </div>
+      </section>
+      <section
+        class="w-3/4 m-auto mt-8 text-center mt-8 grid grid-cols-2 gap-4"
+      >
+        <!-- Transaction Section -->
+        <!-- Deposit section -->
+        <div class="bg-pink-500 py-8 flex flex-col items-center">
+          <h3 class="text-2xl text-white">Please Mention Deposit Amount</h3>
+          <input
+            id="input-deposit"
+            class="p-2 my-2 border rounded"
+            type="text"
+            placeholder="$ deposit amount "
+          /><button
+            id="button-deposit"
+            class="
+              px-4
+              py-2
+              mt-2
+              border border-grey-100
+              rounded
+              bg-green-400
+              text-white
+              font-medium
+            "
+          >
+            Deposit
+          </button>
+        </div>
+        <!-- Withdraw section -->
+        <div class="bg-yellow-500 py-8 flex flex-col items-center">
+          <h3 class="text-2xl text-white">Please Mention Deposit Amount</h3>
+          <input
+            id="input-withdraw"
+            class="p-2 my-2 border rounded"
+            type="text"
+            placeholder="$ withdraw amount"
+          /><button
+            id="button-withdraw"
+            class="
+              px-4
+              py-2
+              mt-2
+              border border-grey-100
+              rounded
+              bg-red-400
+              text-white
+              font-medium
+            "
+          >
+            Withdraw
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
